@@ -1,8 +1,17 @@
+import './App.css'
+import HomePage from './components/HomePage'
+import Navigation from './components/Navigation'
 
 function App() {
-
   return (
-    <div>Welcome to Website ban hang cong nghe</div>
+    <div className="">
+      <Navigation />
+
+    <div>
+      <HomePage />
+    </div>
+    </div>
+
   )
 }
 
