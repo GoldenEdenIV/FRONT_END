@@ -1,9 +1,13 @@
+import React from 'react';
+import Register1 from './components/Register1';
+import './index.css';
 
 function App() {
-
   return (
-    <div>Welcome to Website ban hang cong nghe</div>
-  )
+    <div>
+      <Register1 />
+    </div>
+  );
 }
 
-export default App
+export default App;

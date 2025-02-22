@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-14 py-5 font-semibold text-center text-white bg-blue-600 rounded-[50px] hover:bg-blue-700 transition-colors max-md:px-5;
+  }
+
+  .btn-secondary {
+    @apply gap-2.5 self-stretch px-7 py-2 text-blue-600 border-2 border-solid border-[#0156FF] rounded-[50px] max-md:px-5 hover:bg-blue-600 hover:text-white transition-colors;
+  }
+
+  .input-primary {
+    @apply self-stretch w-full px-4 py-5 mt-3.5 font-light leading-none text-gray-400 bg-white rounded border border-solid border-[#A2A6B0] focus:outline-none focus:border-blue-600;
+  }
+
+  .container-padding {
+    @apply px-16 py-14 max-md:px-5;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-600 rounded-full;
+}
+
+/* Focus styles for better accessibility */
+*:focus-visible {
+  @apply outline-2 outline-blue-600 outline-offset-2;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
