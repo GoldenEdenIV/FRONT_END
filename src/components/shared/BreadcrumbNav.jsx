@@ -2,7 +2,11 @@ import React from "react";
 
 const BreadcrumbNav = () => {
   return (
+<<<<<<< Updated upstream
     <nav className="self-start mt-5 text-xs font-light text-center text-neutral-400 max-md:max-w-full">
+=======
+    <nav className="self-start mt-5 mb-3 text-xs font-light text-center text-neutral-400 max-md:max-w-full">
+>>>>>>> Stashed changes
       <a href="/" className="text-black">
         Home
       </a>

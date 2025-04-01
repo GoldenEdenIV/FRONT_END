@@ -91,7 +91,11 @@ const Home1 = () => {
     <div className="flex overflow-hidden flex-col pt-3 bg-white">
       <Header />
 
+<<<<<<< Updated upstream
       <div className="flex flex-col items-start items-center self-end mt-3 w-full max-w-[1652px] max-md:mr-2 max-md:max-w-full">
+=======
+      <div className="flex flex-col items-center self-end mt-3 w-full max-w-[1652px] max-md:mr-2 max-md:max-w-full">
+>>>>>>> Stashed changes
         <Slider />
 
         <FlashSale />

@@ -8,6 +8,15 @@ import Review1 from './components/Review/Review1'
 import FAQ1 from './components/FAQ/FAQ1'
 import React, { useState } from 'react'; // Ensure React and useState are properly imported
 import ReactDOM from 'react-dom/client'; // Import ReactDOM for rendering
+<<<<<<< Updated upstream
+=======
+import ProductDetail1 from './components/ProductDetail/ProductDetail1'
+import ShoppingCart1 from './components/ShoppingCart/ShoppingCart1'
+import UserAccount1 from './components/UserAccount/UserAccount1'
+import Checkout1 from './components/Checkout/Checkout1'
+import Checkout2 from './components/Checkout/Checkout2'
+import Checkout3 from './components/Checkout/Checkout3'
+>>>>>>> Stashed changes
 
 
 // Define App component
@@ -28,6 +37,21 @@ const App = () => {
         return <FAQ1 />;
       case 'review':
         return <Review1 />;
+<<<<<<< Updated upstream
+=======
+      case 'detail':
+          return <ProductDetail1 />;
+      case 'shoppingcart':
+          return <ShoppingCart1 />;    
+      case 'user':
+          return <UserAccount1 />;    
+      case 'checkout1':
+        return <Checkout1 />;    
+      case 'checkout2':
+        return <Checkout2 />;    
+      case 'checkout3':
+        return <Checkout3 />;    
+>>>>>>> Stashed changes
       default:
         return <Home1 />;
     }
@@ -43,6 +67,16 @@ const App = () => {
         <button className="mr-5" onClick={() => setCurrentPage('contactus')}>ContactUs</button>
         <button className="mr-5" onClick={() => setCurrentPage('faq')}>FAQ</button>
         <button className="mr-5" onClick={() => setCurrentPage('review')}>Review</button>
+<<<<<<< Updated upstream
+=======
+        <button className="mr-5" onClick={() => setCurrentPage('detail')}>Product Detail</button>
+        <button className="mr-5" onClick={() => setCurrentPage('user')}>User Account</button>
+        <button className="mr-5" onClick={() => setCurrentPage('shoppingcart')}>Cart</button>
+        
+        <button className="mr-5" onClick={() => setCurrentPage('checkout1')}>Checkout 1</button>
+        <button className="mr-5" onClick={() => setCurrentPage('checkout2')}>Checkout 2</button>
+        <button className="mr-5" onClick={() => setCurrentPage('checkout3')}>Checkout 3</button>
+>>>>>>> Stashed changes
       </nav>
       {/* Render the selected page */}
       {renderPage()}
